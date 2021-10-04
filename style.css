@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary-pink: #f8e9e2;
+  --orange: #de854a;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: 1.6rem;
+  background: var(--primary-pink);
+}
+/* End of Common Styles */
+/* start of user card */
+.user-card {
+  max-width: 40rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: 0.3rem solid var(--orange);
+  box-shadow: 0 .3rem .8rem rgba(227, 119, 187, 0.3);
+}
+.img-box {
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.img-box img {
+  width: 100%;
+}
+.username {
+  padding-top: 1rem;
+  font-weight: 700;
+}
+.about {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+.buttons-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+.btn {
+  border: none;
+  background: var(--orange);
+  font-family: inherit;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 5rem;
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  transition: 0.2s all;
+}
+.btn i {
+  margin-right: 0.5rem;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+    background: var(--primary-pink);
+    color: var(--black);
+}
+
+@media screen and (max-width:425px) {
+    .buttons-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn{
+        margin: 1rem 0;
+        max-width: 90%;
+    }
+    .user-card{
+        max-width: 90%;
+        padding: 2rem 1rem;
+    }
+}
+/* end of user card */
